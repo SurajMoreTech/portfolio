@@ -5,4 +5,5 @@ node_modules
 tsconfig.tsbuildinfo
 achivments photos/
 certifi/
+out/
 

@@ -128,9 +128,9 @@ const achievements = [
     description:
       "Won First Prize (₹5,000) at the National Level Project Competition (NLPC-2026) organized by IETE Pune Centre in association with G.H. Raisoni College of Engineering and Management, Pune. April 4, 2026.",
     images: [
-      "/achievements/IMG_1357.JPG",
-      "/achievements/IMG_1373.JPG",
-      "/achievements/IMG_1387.JPG",
+      "/portfolio/achievements/IMG_1357.JPG",
+      "/portfolio/achievements/IMG_1373.JPG",
+      "/portfolio/achievements/IMG_1387.JPG",
     ],
     gradient: "from-[#ffd700] to-[#ff8c00]",
     icon: "🏆",
@@ -139,7 +139,7 @@ const achievements = [
     title: "Best Idea Competition — Winner",
     description:
       "Won the Best Idea Competition (Final Round) at G.H. Raisoni College of Engineering and Management, Pune, organized by the Institution's Innovation Council. April 11, 2026.",
-    images: ["/achievements/IMG_1520.JPG", "/achievements/IMG_1532.JPG"],
+    images: ["/portfolio/achievements/IMG_1520.JPG", "/portfolio/achievements/IMG_1532.JPG"],
     gradient: "from-[#856eff] to-[#a891ff]",
     icon: "💡",
   },
@@ -147,7 +147,7 @@ const achievements = [
     title: "NLPC-26 National Finals — D.Y. Patil",
     description:
       "Competed in the Innovation Meet & Final Round of the National Level Project Competition (NLPC-26) at D.Y. Patil College of Engineering, Akurdi, Pune. April 24, 2026.",
-    images: ["/achievements/IMG_1680.jpg", "/achievements/IMG_1698.JPG"],
+    images: ["/portfolio/achievements/IMG_1680.jpg", "/portfolio/achievements/IMG_1698.JPG"],
     gradient: "from-[#4facfe] to-[#00f2fe]",
     icon: "🎯",
   },
@@ -156,7 +156,7 @@ const achievements = [
     description:
       "Successfully completed a 2-month Artificial Intelligence internship at Infosys Springboard, gaining hands-on experience with modern AI and machine learning technologies.",
     images: [],
-    pdfLink: "/certifi/Infosys  intership completion.pdf",
+    pdfLink: "/portfolio/certifi/Infosys  intership completion.pdf",
     gradient: "from-[#00b894] to-[#55efc4]",
     icon: "💼",
   },
@@ -710,7 +710,7 @@ export function PortfolioContent() {
             className="flex items-center gap-2"
           >
             <img
-              src="/logo.png"
+              src="/portfolio/logo.png"
               alt="Suraj More Logo"
               className="h-9 w-auto object-contain"
             />
