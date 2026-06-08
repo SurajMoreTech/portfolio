@@ -157,6 +157,7 @@ const achievements = [
       "Successfully completed a 2-month Artificial Intelligence internship at Infosys Springboard, gaining hands-on experience with modern AI and machine learning technologies.",
     images: [],
     pdfLink: "/portfolio/certifi/Infosys  intership completion.pdf",
+    demoLink: "https://aiinternship-maingit-7ucbm7rtdxmgrpx6objk69.streamlit.app/",
     gradient: "from-[#00b894] to-[#55efc4]",
     icon: "💼",
   },
@@ -303,14 +304,26 @@ function AchievementCard({
         </p>
         {(!achievement.images || achievement.images.length === 0) &&
           "pdfLink" in achievement && (
-            <a
-              href={achievement.pdfLink}
-              target="_blank"
-              rel="noreferrer"
-              className="mt-4 inline-block text-xs font-bold uppercase tracking-[0.16em] text-black/45 transition-colors hover:text-black"
-            >
-              View Certificate →
-            </a>
+            <div className="mt-4 flex flex-wrap items-center gap-4">
+              <a
+                href={achievement.pdfLink}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-block text-xs font-bold uppercase tracking-[0.16em] text-black/45 transition-colors hover:text-black"
+              >
+                View Certificate →
+              </a>
+              {"demoLink" in achievement && achievement.demoLink && (
+                <a
+                  href={achievement.demoLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-block rounded-full bg-gradient-to-r from-[#856eff] to-[#f8a8dd] px-4 py-1.5 text-xs font-bold uppercase tracking-[0.12em] text-white transition-all hover:opacity-85"
+                >
+                  Live Demo →
+                </a>
+              )}
+            </div>
           )}
       </div>
     </div>
